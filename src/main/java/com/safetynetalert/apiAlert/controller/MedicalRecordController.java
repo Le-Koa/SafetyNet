@@ -28,7 +28,7 @@ public class MedicalRecordController {
 
     @PostMapping("/medicalRecord")
     public MedicalRecord createMedicalRecord(@RequestBody MedicalRecord medicalRecord){
-        logger.info("Request to create and save a medecial record to a endpoint ", medicalRecord);
+        logger.info("Request to create and save a medecial record to a endpoint", medicalRecord);
         return medicalRecordService.saveMedicalRecord(medicalRecord);
     }
     @PutMapping("/medicalRecord/{id}")
